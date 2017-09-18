@@ -117,3 +117,6 @@ if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
 fi
 # add alias for ssh to update the tty
 alias ssh="gpg-connect-agent updatestartuptty /bye >/dev/null; ssh"
+
+# Add the chc key, so the server will work
+export CHC_KEY='CHC{W4tch_Y0ur_C0mmits}'
